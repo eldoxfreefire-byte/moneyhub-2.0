@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KING SANTA</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1320468706875491');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1320468706875491&ev=PageView&noscript=1"/>
+</noscript>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:#000;
+overflow:hidden;
+}
+
+/* Animated stars */
+body::before{
+content:'';
+position:absolute;
+width:200%;
+height:200%;
+background-image:
+radial-gradient(#ff003c 1px,transparent 1px);
+background-size:35px 35px;
+opacity:.15;
+animation:stars 25s linear infinite;
+}
+
+@keyframes stars{
+0%{transform:translate(0,0);}
+100%{transform:translate(-120px,-120px);}
+}
+
+.card{
+position:relative;
+width:340px;
+padding:45px 25px;
+border-radius:30px;
+text-align:center;
+background:rgba(15,15,15,.85);
+border:2px solid #ff003c;
+
+box-shadow:
+0 0 20px #ff003c,
+0 0 50px #ff003c,
+0 0 100px rgba(255,0,60,.8);
+
+animation:
+float 3s ease-in-out infinite,
+glow 2s alternate infinite;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-12px);
+}
+}
+
+@keyframes glow{
+from{
+box-shadow:
+0 0 20px #ff003c,
+0 0 50px #ff003c;
+}
+to{
+box-shadow:
+0 0 40px #ff003c,
+0 0 90px #ff003c,
+0 0 160px rgba(255,0,60,1);
+}
+}
+
+.profile{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #ff1744;
+
+box-shadow:
+0 0 20px #ff1744,
+0 0 50px #ff1744;
+
+margin-bottom:20px;
+animation:rotateGlow 4s linear infinite;
+}
+
+@keyframes rotateGlow{
+50%{
+transform:scale(1.05);
+}
+}
+
+h1{
+color:white;
+font-size:34px;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+h1 span{
+color:#ff003c;
+text-shadow:
+0 0 10px #ff003c,
+0 0 30px #ff003c,
+0 0 60px #ff003c;
+}
+
+.desc{
+color:#d7d7d7;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+position:relative;
+display:inline-block;
+padding:18px 40px;
+border-radius:60px;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+color:#fff;
+overflow:hidden;
+
+background:linear-gradient(90deg,#ff003c,#ff4d6d,#ff003c);
+background-size:300% 300%;
+
+box-shadow:
+0 0 20px #ff003c,
+0 0 40px #ff003c,
+0 0 80px #ff003c;
+
+animation:
+gradientMove 3s linear infinite,
+pulse 1.5s infinite;
+}
+
+.btn::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:rgba(255,255,255,.35);
+transform:skewX(-30deg);
+animation:shine 2s infinite;
+}
+
+@keyframes shine{
+100%{
+left:150%;
+}
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.08);
+}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+<img src="IMG_20260702_175701_840.jpg" class="profile" alt="Profile">
+
+<h1><span>𝐌𝐎𝐍𝐄𝐘 𝐇𝐔𝐁</span></h1>
+
+<div class="desc">
+🔥 Premium VIP Community<br>
+🚀 Daily Updates & Exclusive Content
+</div>
+
+<a
+href="https://t.me/+BSwgC8o5W5Q0NDg1"
+target="_blank"
+class="btn"
+onclick="fbq('track','Lead');">
+🚀 JOIN NOW
+</a>
+
+</div>
+
+</body>
+</html>
